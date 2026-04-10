@@ -103,6 +103,7 @@ async def vk_callback(request: Request):
     # При первичной настройке Callback API VK отправляет запрос типа "confirmation".
     # Мы должны ответить специальной строкой, чтобы VK подтвердил наш сервер.
     if data.get("type") == "confirmation":
+        print("Confirmation request received!")
         return VK_CONFIRMATION_TOKEN
 
     # ====== ОБРАБОТКА НОВОГО СООБЩЕНИЯ ======
