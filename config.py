@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 #Чтение переменных. Мы берем значения из .env файла и подставляем их в необходимые переменные.
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-OPENAI_PROMPT_ID = os.getenv("OPENAI_PROMPT_ID")
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+#OPENAI_PROMPT_ID = os.getenv("OPENAI_PROMPT_ID")
 
 #Настройки ВКонтакте. Здесь есть важное замечание: если в файле .env не прописана API-версия ВКонтакте, она возьмется как дефолтная (по умолчанию).
 # Это нормальная практика для таких параметров, как версия API, порт или хост.
@@ -24,8 +24,7 @@ APP_PORT = int(os.getenv("APP_PORT", "8000"))
 # Если какая-то переменная отсутствует, приложение сразу упадет, чтобы мы не гадали, почему ничего не работает.
 def validate_config():
     required = {
-        "OPENAI_API_KEY": OPENAI_API_KEY,
-        "OPENAI_PROMPT_ID": OPENAI_PROMPT_ID,
+        "OPENROUTER_API_KEY": OPENROUTER_API_KEY,
         "VK_GROUP_TOKEN": VK_GROUP_TOKEN,
         "VK_CONFIRMATION_TOKEN": VK_CONFIRMATION_TOKEN,
         "VK_SECRET": VK_SECRET,

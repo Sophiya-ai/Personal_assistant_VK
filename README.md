@@ -10,5 +10,7 @@ flask
 python-dotenv
 requests
 fastapi
+pip install chromadb tiktoken
+
 pip install -r requirements.txt
 pip freeze > requirements.txt
