@@ -1,4 +1,4 @@
-# Personal_assistant_VK
+# 📱 Personal_assistant_VK
 **[![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.95.0-green)](https://fastapi.tiangolo.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)**
@@ -61,6 +61,7 @@ _(Используйте python -m pip install -r requirements.txt, если pip
 ```bash
 cp .env.example .env
 ```
+
 ### 🔧 Настройка
 #### 1. Конфигурационный файл .env
 
@@ -88,7 +89,9 @@ https://ваш-ngrok-url.ngrok-free.app/vk/callback
 - Положите текстовые файлы (`.txt`) с информацией в папку `knowledge_files/`. 
 - __При первом запуске__ — файлы автоматически загрузятся в ChromaDB.
 
-## 🛠 Запуск проекта (для разработки)
+--- 
+
+## 🛠️  Запуск проекта (для разработки)
 ```bash
 # 1. Бот
 uvicorn app:app --reload --port 8000
@@ -96,6 +99,9 @@ uvicorn app:app --reload --port 8000
 # 2. ngrok (новый терминал)
 ngrok http 8000
 ```
+
+--- 
+
 ## 📂 Структура проекта
 ```text
 📁 Personal_assistant_VK/
@@ -113,6 +119,8 @@ ngrok http 8000
 └── README.md             # Файл описания проекта
 └── bot.db                # База диалогов
 ```
+--- 
+
 ## 📊 Сравнение подходов - почему REST API
 |   Параметр   |	🌐 REST API| 	📦 SDK OpenAI|
 |:--------------:|   :--------:   |       :---:|
@@ -123,8 +131,9 @@ ngrok http 8000
  ⚙️ Сложность	  |Средняя	|Лёгкая
   🎛️ Гибкость  |	✅ Максимум|	Ограниченная
 
+--- 
 
-## При разработке устанавливались следующие библиотеки:
+✨ При разработке устанавливались следующие библиотеки
 - 
 ```bash 
 pip install -U fastapi uvicorn pydantic 
@@ -140,6 +149,8 @@ pip install openai flask python-dotenv requests chromadb tiktoken
 ```bash 
 pip freeze > requirements.txt
 ```
+--- 
+
 ## 🔍 Отладка проблем
 ### Логи не показываются
 ```text
