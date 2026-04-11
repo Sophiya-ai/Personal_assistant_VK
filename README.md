@@ -35,13 +35,13 @@
 
 ## 🚀 Быстрый старт
 
-### Предварительные требования
+### ✨Предварительные требования
 
 - Python 3.9+
 - Учетная запись [OpenRouter](https://openrouter.ai/) (для API ключа)
 - Сообщество VK с включенным Callback API
 
-### Клонируйте репозиторий и установите зависимости
+### 🔧Клонируйте репозиторий и установите зависимости
 
 ```bash
 git clone https://github.com/Sophiya-ai/Personal_assistant_VK
@@ -55,12 +55,6 @@ source .venv/bin/activate  # Linux/Mac
 pip install -r requirements.txt
 ```
 _(Используйте python -m pip install -r requirements.txt, если pip не работает)_
-
-### Копируем пример конфигурации
-
-```bash
-cp .env.example .env
-```
 
 ### 🔧 Настройка
 #### 1. Конфигурационный файл .env
