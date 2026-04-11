@@ -136,9 +136,10 @@ pip install -U fastapi uvicorn pydantic
 - __FastAPI__ - фреймворк для создания API
 ```bash 
 pip install openai flask python-dotenv requests chromadb tiktoken
+```
 - __tiktoken__ - токенизатор для подсчета токенов
 - __chromadb__ - векторная база данных
-```
+
 - затем все сохранялись в файл `requirements.txt`
 ```bash 
 pip freeze > requirements.txt
